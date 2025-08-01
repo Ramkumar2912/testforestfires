@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Predictor</title>
+</head>
+<body>
+    <h2>Enter Forest Fire Weather Inputs</h2>
+    <form method="POST" action="/predict">
+        <label>Temperature: <input type="number" step="0.01" name="Temperature" required></label><br>
+        <label>RH: <input type="number" step="0.01" name="RH" required></label><br>
+        <label>Ws: <input type="number" step="0.01" name="Ws" required></label><br>
+        <label>Rain: <input type="number" step="0.01" name="Rain" required></label><br>
+        <label>FFMC: <input type="number" step="0.01" name="FFMC" required></label><br>
+        <label>DMC: <input type="number" step="0.01" name="DMC" required></label><br>
+        <label>DC: <input type="number" step="0.01" name="DC" required></label><br>
+        <label>ISI: <input type="number" step="0.01" name="ISI" required></label><br>
+        <label>BUI: <input type="number" step="0.01" name="BUI" required></label><br>
+
+
+
+        <input type="submit" value="Predict FWI">
+    </form>
+</body>
+</html>
