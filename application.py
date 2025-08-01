@@ -2,7 +2,8 @@ from flask import Flask, request, render_template
 import pickle
 import numpy as np
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 # Load model and scaler
 ridge_model = pickle.load(open('ridge.pkl', 'rb'))  # put your model here
